@@ -1,6 +1,7 @@
 '''
 A hunter that simply creates a log file with indicators submitted to CIF, minus some fields
 Set a full path file location in /etc/cif.env with the variable CIF_HUNTER_SUBMISSION_LOGGING_FILE
+Be sure hunters are enabled; there must be an integer value set for CIF_HUNTER_THREADS to enable hunters
 '''
 import logging
 import os
