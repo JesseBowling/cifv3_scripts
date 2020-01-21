@@ -23,7 +23,7 @@ class SubmissionLogging(object):
     def process(self, i, router):
         l = i.__dict__()
         # Remove fields not useful for this log
-        for field in ['timezone', 'uuid', 'tlp', 'confidence', 'group']:
+        for field in ['uuid', 'tlp', 'confidence', 'group']:
             l.pop(field)
         logger.info('{}'.format(json.dumps(l)))
 
