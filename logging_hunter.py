@@ -24,7 +24,7 @@ class SubmissionLogging(object):
         l = i.__dict__()
         # Remove fields not useful for this log
         for field in ['uuid', 'tlp', 'confidence', 'group']:
-            l.pop(field)
+            l.pop(field, None)
         logger.info('{}'.format(json.dumps(l)))
 
 
